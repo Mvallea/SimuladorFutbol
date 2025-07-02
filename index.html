@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⚽ Simulador de Fútbol</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>⚽ Simulador de Fútbol ⚽</h1>
+    <p>¡Elige tu jugador y portero, y vive la emoción del gol!</p>
+  </header>
+
+  <main>
+    <div class="selector">
+      <div>
+        <label for="jugadorSelect">Jugador:</label>
+        <select id="jugadorSelect"></select>
+      </div>
+      <div>
+        <label for="porteroSelect">Portero:</label>
+        <select id="porteroSelect"></select>
+      </div>
+      <button id="simularBtn">⚽ Disparar</button>
+    </div>
+
+    <section id="resultado" class="resultado"></section>
+
+    <section class="marcador">
+      <h2>🏆 Marcador</h2>
+      <p id="contadorGoles">Goles: 0</p>
+      <p id="contadorParadas">Paradas: 0</p>
+    </section>
+
+    <section class="historial">
+      <h2>📜 Historial</h2>
+      <ul id="historialLista"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Simulador de Fútbol desarrollado con pasión ⚽❤️</p>
+  </footer>
+
+  <script src="Js/simulador.js"></script>
+</body>
+</html>
