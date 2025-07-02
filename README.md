@@ -34,10 +34,6 @@ SimuladorFutbol/
 ├── README.md
 ```
 
-## 📸 Captura de pantalla
-
-*(Puedes añadir una imagen si lo deseas, por ejemplo una captura del simulador en uso)*
-
 ## 👨‍💻 Autor
 
-- Nova Mvallea
+- Mario Valle Armendariz

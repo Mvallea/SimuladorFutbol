@@ -8,9 +8,9 @@ const jugadores = [
 ];
 
 const porteros = [
-  { nombre: "Thibaut Courtois", parada: 90 },
-  { nombre: "Jan Oblak", parada: 89 },
-  { nombre: "Unai Simón", parada: 85 }
+  { nombre: "Thibaut Courtois", parada: 90, altura: 194 },
+  { nombre: "Jan Oblak", parada: 89, altura: 191 },
+  { nombre: "Unai Simón", parada: 85, altura: 187 }
 ];
 
 const jugadorSelect = document.getElementById("jugadorSelect");
@@ -50,9 +50,8 @@ function simularDisparo() {
   const jugador = jugadores[jugadorSelect.value];
   const portero = porteros[porteroSelect.value];
 
-  const potenciaJugador = jugador.tiro + Math.random() * 10;
-  const capacidadPortero = portero.parada + Math.random() * 10;
-
+  const potenciaJugador = jugador.tiro + (Math.random() * jugador.regate);
+  const capacidadPortero = portero.parada + (Math.random() * portero.altura / 2.3);
   const resultado = potenciaJugador > capacidadPortero ? "¡GOOOOL! ⚽🔥" : "¡ATAJADA! 🧤❌";
 
   if (resultado.includes("GOOOOL")) {
